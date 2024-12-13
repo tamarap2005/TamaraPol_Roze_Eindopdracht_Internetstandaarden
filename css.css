@@ -1,0 +1,323 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* bron: https://www.youtube.com/watch?v=g_ak8PO5gkU&ab_channel=Mr.WebDesigner */
+html {
+  scroll-behavior: smooth;
+}
+
+/* tekst */
+h1,
+h2,
+h3,
+h4 {
+  font-weight: bold;
+}
+
+/* header */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(216, 216, 216);
+  padding: 1em 3em;
+}
+
+h1 {
+  font-size: 1em;
+  gap: 0.5em;
+  width: 5vw;
+}
+
+h1 a {
+  text-decoration: none;
+  color: rgb(185, 5, 131);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+}
+
+nav li {
+  margin: 0 1em;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  color: rgb(164, 11, 118);
+  transition: 0.3s;
+}
+
+.actief {
+  background-color: rgb(236, 91, 192);
+  padding: 0.5em 1em;
+  border-radius: 1em;
+  color: white;
+}
+
+/* index pagina*/
+/* main > eerste gedeelte */
+main > section:first-of-type {
+  background-image: url("/images/achtergrond.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  padding: 5em 20em 10em 10em;
+  color: white;
+  height: 100%;
+}
+
+main > section:first-of-type > h2 {
+  font-size: 4em;
+  margin: 0;
+}
+
+section:first-of-type > p {
+  padding-bottom: 1.5em;
+}
+
+/* tweede gedeelte */
+article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-self: center;
+  margin: 6em 0;
+  align-items: center;
+  width: 55%;
+}
+
+article h2 {
+  width: 100%;
+}
+
+article p {
+  width: 60%;
+}
+
+article img {
+  width: 40%;
+}
+
+article a {
+  margin-top: 0.2em;
+  padding: 0.5em 1em;
+  color: white;
+  background-color: rgb(153, 196, 90);
+  text-decoration: none;
+  border-radius: 1em;
+}
+
+article a:hover {
+  background-color: rgb(132, 175, 72);
+  transition: 0.2s;
+}
+
+/* derde gedeelte */
+main > section:last-of-type {
+  background-color: rgb(255, 227, 237);
+  padding-bottom: 2em;
+}
+
+main > section:last-of-type h2 {
+  padding-top: 2em;
+}
+
+section ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 4em;
+}
+
+main > section:last-of-type li:first-of-type {
+  background-image: url("/images/geschiedenis.jpg");
+}
+
+main > section:last-of-type li:nth-of-type(2) {
+  background-image: url("/images/hoogtepunten.jpg");
+}
+
+main > section:last-of-type li:nth-of-type(3) {
+  background-image: url("/images/dieren.jpg");
+}
+
+main > section:last-of-type li {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 5em 0;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 2em;
+  background-color: rgb(172, 172, 172);
+}
+
+section:last-of-type ul a {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.416);
+  text-decoration: none;
+  padding: 1em;
+  border-radius: 2.5em 2.5em 0 0;
+  font-size: 0.8em;
+  color: white;
+}
+
+main > section:last-of-type li:hover {
+  scale: 1.2;
+  transition: 0.5s;
+}
+
+/* geschiedenis pagina */
+/* positioneren van de elementen */
+#tijdlijn h2 {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  margin-bottom: 2em;
+}
+
+#tijdlijn ol {
+  display: grid;
+  grid-template-columns: 43% 14% 43%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  list-style: none;
+}
+
+#tijdlijn li:nth-of-type(1) {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
+
+#tijdlijn li:nth-of-type(2) {
+  grid-row: 2 / 3;
+  grid-column: 3 / 4;
+}
+
+#tijdlijn li:nth-of-type(3) {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+}
+
+#tijdlijn li:nth-of-type(4) {
+  grid-row: 4 / 5;
+  grid-column: 3 / 4;
+}
+
+#tijdlijn li:nth-of-type(5) {
+  grid-row: 5 / 6;
+  grid-column: 1 / 2;
+}
+
+#tijdlijn li:nth-of-type(6) {
+  grid-row: 1 / 6;
+  grid-column: 2 / 3;
+}
+
+/* stukje dat tijd aangeeft */
+#tijdlijn ol li > h3 {
+  display: flex;
+  justify-content: center;
+  padding: 0.5em;
+  background-color: rgb(255, 153, 224);
+  width: max-content;
+  border-radius: 2em;
+  margin-bottom: 0.5em;
+}
+
+#tijdlijn li:first-of-type > h3,
+#tijdlijn li:nth-of-type(3) > h3,
+#tijdlijn li:nth-of-type(5) > h3 {
+  display: flex;
+  justify-self: end;
+}
+
+/* vormgeving van section */
+ol {
+  margin: 0 8em;
+}
+
+ol li section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  background-color: rgb(240, 240, 240);
+  border-radius: 1.5em;
+}
+
+ol li section h3 {
+  display: block;
+  width: 100%;
+  background-color: rgb(255, 153, 224);
+  border-radius: 1.5em 1.5em 0 0;
+  padding: 0.5em 0.5em 0.5em 1em;
+}
+
+/* roze lijn in het midden */
+ol li img {
+  display: flex;
+  justify-self: center;
+  height: 97.5%;
+  width: 90%;
+}
+
+ol li section img {
+  width: 45%;
+  height: 45%;
+  margin: 1em 0 1em 1em;
+  border-radius: 1em;
+}
+
+ol li section p {
+  width: 40%;
+  margin: 1em;
+}
+
+/* pagina hoogtepunten */
+h2 {
+  display: flex;
+  justify-content: center;
+  margin: 1em 0;
+}
+
+main > ul {
+  display: flex;
+  justify-self: center;
+  flex-wrap: wrap;
+  list-style: none;
+  width: 55vw;
+}
+
+main > ul h3 {
+  margin: 1em 0;
+}
+
+main > ul img {
+  width: 55vw;
+  border-radius: 0 2em 0 0;
+}
+
+main > ul p {
+  background-color: rgb(240, 240, 240);
+  padding: 1em 2em;
+  border-radius: 0 0 2em 0;
+  margin-bottom: 3em;
+}
+
+/* pagina dieren */
+.dieren,
+.dieren img {
+  width: 30vw;
+}
