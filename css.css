@@ -71,7 +71,7 @@ nav a:hover {
 /* index pagina*/
 /* main > eerste gedeelte */
 main > section:first-of-type {
-  background-image: url("../images/achtergrond.jpg");
+  background-image: url("../TamaraPol_Roze_Eindopdracht_Internetstandaarden/images/achtergrond.jpg");
   background-size: auto 100%;
   background-repeat: no-repeat;
   object-fit: cover;
